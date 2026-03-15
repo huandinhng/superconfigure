@@ -17,16 +17,16 @@ include config/functions.mk
 
 # recipes for each subfolder
 include cosmo-repo/BUILD.mk
-include lib/BUILD.mk
-include cli/BUILD.mk
+# include lib/BUILD.mk
+# include cli/BUILD.mk
 include compiler/BUILD.mk
-include compress/BUILD.mk
-include editor/BUILD.mk
-include games/BUILD.mk
-include web/BUILD.mk
-include python/BUILD.mk
-include gui/BUILD.mk
-include lang/BUILD.mk
+# include compress/BUILD.mk
+# include editor/BUILD.mk
+# include games/BUILD.mk
+# include web/BUILD.mk
+# include python/BUILD.mk
+# include gui/BUILD.mk
+# include lang/BUILD.mk
 
 # recipe for cosmos
 include cosmo-repo/cosmos.mk

@@ -1,7 +1,7 @@
 
-LLVM_SRC := https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.8.tar.gz
+LLVM_SRC := https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-22.1.1.zip
 LLVM_DEPS := cosmo-repo/base
-LLVM_BINS := clang-20 clang-format
+LLVM_BINS := $(ls /tmp/llvm/bin | tr '\n' ' ')
 
 $(eval $(call DOWNLOAD_SOURCE,compiler/llvm,$(LLVM_SRC)))
 $(eval $(call SPECIFY_DEPS,compiler/llvm,$(LLVM_DEPS)))
